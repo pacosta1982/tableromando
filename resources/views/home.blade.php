@@ -51,7 +51,7 @@
 
             // Update footer
             $( api.column( 4 ).footer() ).html(
-                ''+pageTotal +' ( '+ total +' total)'
+                ''+pageTotal +' ('+ total +')'
             );
         },
             'columnDefs': [
