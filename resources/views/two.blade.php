@@ -20,7 +20,7 @@
                         <tr>
                             <td>{{ $item->exp }}</td>
                             <td>{{ $item->project_id?$item->getProyecto->name:"" }}</td>
-                            <td>{{ $item->project_id?$item->getProyecto->getSat->NucNomSat:"" }}</td>
+                            <td>{{ utf8_encode($item->project_id?$item->getProyecto->getSat->NucNomSat:"") }}</td>
                             <td><span class="label label-success">Recibido</span></td>
                             <td>{{ $item->getPostulantes->count() }}</td>
                         </tr>
